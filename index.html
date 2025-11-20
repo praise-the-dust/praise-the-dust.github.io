@@ -5,26 +5,38 @@
     <title></title>
     <style>
       body {
-        text-align: center;
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
         font-family: Arial, sans-serif;
+        background: #fff;
       }
-      img {
-        width: 300px;
-        max-width: 80vw;
-        margin-bottom: 40px;
+      .imagen-grande {
+        width: 500px;      /* Puedes ajustar el tamaño aquí */
+        max-width: 95vw;
+        display: block;
+        margin: 0 auto;
       }
       .boton-badge {
-        display: inline-block;
-        margin-top: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .boton-badge img {
+        width: 110px;      /* Botón más pequeño */
+        height: auto;
       }
     </style>
   </head>
   <body>
-    <!-- Imagen principal -->
-    <img src="IMG_3417.png" alt="Nota manuscrita">
+    <!-- Imagen principal grande y centrada -->
+    <img src="IMG_3417.png" alt="Nota manuscrita" class="imagen-grande">
 
-    <!-- Botón estilo badge -->
+    <!-- Botón pequeño y centrado debajo de la imagen -->
     <div class="boton-badge">
       <a href="https://www.tupagina.com">
         <img src="https://img.shields.io/badge/click%20here-black?style=for-the-badge" alt="click here">
